@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+
+main{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 100vh;
+    font-size: 15px;
+}
+
+.background{
+    position: absolute;
+}
+
+.container{
+    width: 64rem;
+}
+
+.heading{
+    font-size: 60px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.words{
+    width: 40%;
+}
+
+.words p{
+    color: hsl(303, 10%, 53%);
+    padding-right: 44px;
+    line-height: 1.3;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.review{
+    background-color: hsl(300, 24%, 96%);
+}
+
+.ratings{
+    margin-top: 30px;
+    width: 45%;
+}
+
+.ratings .rating2{
+    margin-left: 30px;
+}
+
+.ratings .rating3{
+    margin-left: 60px;
+}
+
+.ratings span{
+    padding-right: 30px;
+}
+
+.ratings p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    width: 370px;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.cards{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.card{
+    background-color: hsl(300, 43%, 22%);
+    width: 256px;
+    height: 148px;
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+
+.card img{
+    border-radius: 50%;
+    width: 40px;
+}
+
+.img-name-verified{
+    display: flex;
+    align-items: center;
+}
+
+.name-verified{
+    margin-left: 20px;
+    line-height: 1.2;
+}
+
+.name{
+    font-weight: 700;
+}
+
+.verified{
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+.comment{
+    margin-top: 30px;
+    line-height: 1.3;
+}
+
+.card2{
+    margin-top: 20px;
+}
+
+.card3{
+    margin-top: 40px;
+}
+
+@media (max-width:376px) {
+    .content{
+        display: block;
+        text-align: center;
+    }
+    .container{
+        width: 90vw;
+        margin: 20px auto;
+    }
+    .cards{
+        display: block;
+    }
+    .ratings .rating2{
+        margin-left: 0;
+    }
+    .ratings .rating3{
+        margin-left: 0;
+    }
+
+    main{
+        height: auto;
+    }
+
+    .words{
+        width: auto;
+    }
+
+    .heading{
+        font-size: 50px;
+    }
+
+    .words p{
+        padding: 0 28px;
+    }
+
+    .ratings{
+        width: 100%;
+    }
+
+    .ratings p{
+        width: auto;
+    }
+
+    .review span{
+        display: block;
+        padding: 0 0 10px 0;
+    }
+
+    .card{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}
